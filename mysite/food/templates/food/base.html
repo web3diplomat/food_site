@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'food/style.css' %}">
+    <title>Document</title>
+    
+</head>
+<body>
+        <nav class="navbar navbar-dark bg-dark" >
+                <a href="#" class="navbar-brand">Food App</a>
+
+                <div class="navbar">
+                    <a class="nav-item nav-link" href="#">Add Item</a>
+                    <a class="nav-item nav-link" href="#">Delete Item</a>
+                    <a class="nav-item nav-link" href="#">View Item</a>
+                </div>
+
+        </nav>
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
